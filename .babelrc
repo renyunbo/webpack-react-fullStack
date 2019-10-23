@@ -1,0 +1,6 @@
+{
+    "presets": [
+        ["es2015",{"loose":true}],//presets表示babel支持的版本
+        "react"
+    ]
+}
