@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:client": "webpack --config build/webpack.config.client.js",
     "build:server": "webpack --config build/webpack.config.server.js",
-    "clear":"rimraf dist",
-    "build": "npm run clear && npm run build:client && npm run build:server"
+    "clear": "rimraf dist",
+    "build": "npm run clear && npm run build:client && npm run build:server",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "webpack-cli": "^3.3.9"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }
